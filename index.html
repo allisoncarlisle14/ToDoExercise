@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+
+    <!-- Bootstrap styles: -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- favicon to avoid the error: favicon.ico:1 GET http://127.0.0.1:8080/favicon.ico 404 (Not Found)-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://picsum.photos/id/6/200/300"
+    />
+  </head>
+  <body>
+
+    <!-- we will put our react component inside this div -->
+    <div id="root"></div>
+
+    <!-- load react libraries-->
+    <script
+      src="https://unpkg.com/react/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- load react-Bootstrap -->
+    <script
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin
+    ></script>
+
+    <!-- load our react component. -->
+    <script src="index.js" defer type="text/babel"></script>
+    <script src="form.js" defer type="text/babel"></script>
+    <script src="todo.js" defer type = "text/babel"></script>
+  </body>
+</html>
